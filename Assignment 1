@@ -1,0 +1,488 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "0ef75752",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['tree', 'oxygen', 'human']\n"
+     ]
+    }
+   ],
+   "source": [
+    "life = [\"tree\",\"oxygen\",\"human\"]\n",
+    "print(life)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "19e48f8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 4, 'Gitam', 6, 'college']\n",
+      "[]\n",
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#example of lists\n",
+    "\n",
+    "list1=[1,4,\"Gitam\",6,\"college\"]\n",
+    "list2=[]  # creates an empty list\n",
+    "list3=list((1,2,3))\n",
+    "print(list1)\n",
+    "print(list2)\n",
+    "print(list3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "2ff8765e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 'college', 9)\n",
+      "()\n",
+      "(1, 3, 5, 9, 'hello')\n"
+     ]
+    }
+   ],
+   "source": [
+    "#example of tuples\n",
+    "\n",
+    "tuple1=(1,2,\"college\",9)\n",
+    "tuple2=() # creates an empty tuple\n",
+    "tuple3=tuple((1,3,5,9,\"hello\"))\n",
+    "print(tuple1)\n",
+    "print(tuple2)\n",
+    "print(tuple3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8ff65380",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5, 'hello', 'tup'}\n",
+      "{(1, 8, 'python', 7)}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#example of sets\n",
+    "\n",
+    "set1={1,2,3,4,5,\"hello\",\"tup\"}\n",
+    "set2={(1,8,\"python\",7)}\n",
+    "print(set1)\n",
+    "print(set2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "8fbe2746",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'key1': 'value1', 'key2': 'value2'}\n",
+      "{}\n",
+      "{1: 'apple', 2: 'cherry', 3: 'strawberry'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#example of dictionary\n",
+    "\n",
+    "dict1={\"key1\":\"value1\",\"key2\":\"value2\"}\n",
+    "dict2={}   # empty dictionary\n",
+    "dict3=dict({1:\"apple\",2:\"cherry\",3:\"strawberry\"})\n",
+    "print(dict1)\n",
+    "print(dict2)\n",
+    "print(dict3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "41cf8920",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'data', 'subclass', 'class', 123, 'tea'}\n",
+      "{'data'}\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "set1 ={\"data\",\"class\",123}\n",
+    "set2 ={\"subclass\",\"data\",\"tea\"}\n",
+    "set3 = set1.union(set2)\n",
+    "set4 = set1.intersection(set2)\n",
+    "set5 = set1.clear()\n",
+    "print(set3)\n",
+    "print(set4)\n",
+    "print(set5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "a501b961",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "setx = 11\n",
+    "sety = 22\n",
+    "print(setx>sety)\n",
+    "print(setx<sety)\n",
+    "print(setx==sety)\n",
+    "print(setx!=sety)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "007530fd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['house', 'door', 'windows']\n",
+      "<class 'list'>\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#assignment 1 regarding dict,tuples,list\n",
+    "\n",
+    "list1 = [\"house\",\"door\",\"windows\"]\n",
+    "print(list1)\n",
+    "\n",
+    "# to know the type of list\n",
+    "print(type(list1))\n",
+    "\n",
+    "# to know the length of list\n",
+    "print(len(list1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "c791c549",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['house', 'door', 'windows', 'floor']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#addition of item in the list1\n",
+    "list1.append(\"floor\")\n",
+    "print(list1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "78bdbe83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['house', 'door', 'windows']\n",
+      "['door', 'windows']\n",
+      "['windows']\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1 = [\"house\",\"door\",\"windows\"]\n",
+    "print(list1)\n",
+    "\n",
+    "#remove of item in the list1\n",
+    "list1.remove(\"house\")\n",
+    "print(list1)\n",
+    "\n",
+    "#using the pop method \n",
+    "list1.pop(0)\n",
+    "print(list1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "0de8150d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'internet', 'hello world', 'CSS', 'HTML'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#now creating list using curly braces\n",
+    "\n",
+    "mylist1 = {\"hello world\",\"internet\",\"HTML\",\"CSS\"}\n",
+    "print(mylist1)\n",
+    "\n",
+    "#type of the list \n",
+    "print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "0165b5b7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['banana', 'kiwi', 'mango', 'orange', 'pineapple']\n",
+      "['pineapple', 'orange', 'mango', 'kiwi', 'banana']\n",
+      "[10, 23, 34, 56, 100]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#arranging the list using sort\n",
+    "thislist = [\"orange\", \"mango\", \"kiwi\", \"pineapple\", \"banana\"]\n",
+    "thislist.sort()\n",
+    "print(thislist)\n",
+    "\n",
+    "#reversing the order\n",
+    "thislist.sort(reverse=True)\n",
+    "print(thislist)\n",
+    "\n",
+    "list2 = [100,34,23,10,56]\n",
+    "list2.sort()\n",
+    "print(list2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9cca50d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#mutable or immutable :\n",
+    "\n",
+    "#A mutable object can be changed after it's created\n",
+    "#A immutable object cannot be changed after it's created"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "bb434cc5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#indexing and slicing \n",
+    "\n",
+    "fruits = ['apple', 'banana', 'cherry']\n",
+    "\n",
+    "x = fruits.index(\"cherry\")\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "78a6b225",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['apple']\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits = ['apple', 'banana', 'cherry']\n",
+    "\n",
+    "x = fruits[0:1]\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1aac4350",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#The frozenset() function returns an immutable frozenset object initialized with elements from the given iterable.\n",
+    "\n",
+    "#here we can conclude that they are immutable in nature "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "a12e1ee2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The frozen set is: frozenset({'u', 'i', 'a', 'o', 'e'})\n",
+      "The empty frozen set is: frozenset()\n"
+     ]
+    }
+   ],
+   "source": [
+    "#assignment 2 regarding frozen set\n",
+    "\n",
+    "\n",
+    "vowels = ('a', 'e', 'i', 'o', 'u')\n",
+    "\n",
+    "fSet = frozenset(vowels)\n",
+    "print('The frozen set is:', fSet)\n",
+    "print('The empty frozen set is:', frozenset())\n",
+    "\n",
+    "#frozenset are immutable\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5c836065",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The frozenset is : frozenset({2, 3, 5, 7, 9})\n"
+     ]
+    }
+   ],
+   "source": [
+    "prime = (2,3,5,7,9)\n",
+    "\n",
+    "setp = frozenset(prime)\n",
+    "print('The frozenset is :',setp)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "eaf49ece",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 'tree', 4, 56, 'road', 'house', 78}\n",
+      "set()\n",
+      "<class 'set'>\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "set1 = {1,4,56,78}\n",
+    "set2 = {'house','tree','road'}\n",
+    "\n",
+    "#using of union in two sets\n",
+    "set3 = set1.union(set2)\n",
+    "print(set3)\n",
+    "\n",
+    "#using of intersection in two sets\n",
+    "set3 = set1.intersection(set2)\n",
+    "print(set3)\n",
+    "\n",
+    "#type of the set\n",
+    "print(type(set1))\n",
+    "print(type(set2))"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
